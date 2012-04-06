@@ -47,9 +47,9 @@ task :loadpages => :environment do
         #                 downloaded_file = open(pdflink['href'])
         #                 file.write(downloaded_file.read())
         #                 puts "downloaded #{downloaded_file}"
-              end
-          end
-        end
+              # end
+              #    end
+        # end
     end 
   end
 
