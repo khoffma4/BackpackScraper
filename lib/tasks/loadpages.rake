@@ -16,8 +16,8 @@ task :loadpages => :environment do
 
     # Submit the login form
     my_page = page.form_with(:action => "https://launchpad.37signals.com/authenticate") do |f|
-      f.username = <username>
-      f.password = <password>
+      f.username = BP_USERNAME
+      f.password = BP_PASSWORD
     end.click_button
 
     my_page.links_with(:class => "link_to_page ").each do |link|
